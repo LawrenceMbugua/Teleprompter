@@ -1,0 +1,196 @@
+* {
+  padding:0;
+  margin: 0;
+  box-sizing: border-box
+}
+
+body {
+    
+    font-size: 15pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+   /* background-image: url(img3.jpeg); */
+    background-size: 80%;
+    background-repeat: no-repeat;
+    
+    
+   
+         background-repeat: no-repeat;
+         background-position: fixed;
+         background-attachment: center;
+         /* keep increasing the value of */
+         /* the background-size property */
+         /* until the background covers */
+         /* the entire page */
+         background-size: cover;
+    font-family: "Audiowide", sans-serif
+}
+
+img {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.input {
+  width: 100%;
+  min-height: 80vh;
+  border-bottom: 1px solid dimgray;
+  position: absolute;
+  top: -100%;
+  display: flex;
+  gap: 50px;
+  color: whitesmoke;
+  background: rgba(0, 0, 0, .5);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 1.5s;
+}
+
+.input textarea {
+  background: black;
+  color: greenyellow;
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 50vh
+}
+
+.input textarea:focus {
+  border: none
+}
+
+.input button {
+  padding: 8px 16px;
+  border: 1px solid darkgray;
+  background: none;
+  color: darkgray;
+  font-weight: bold
+}
+
+.input #submit {
+  color: white;
+  font-weight: bold;
+  border: 1px solid #ffff;
+}
+
+.menu {
+  padding: 8px 16px;
+  border: 1px solid darkgray;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  background: none;
+  color: darkgrey;
+}
+
+.menu:hover .input {
+  background: red
+  
+}
+
+.container {
+  width: 96%;
+  min-height: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: transparent;
+  align-self: star
+}
+
+.container .glass {
+  width: 80%;
+  height: 60vh;
+  border-radius: 10px;
+  position: relative;
+  background: rgba(0, 0, 0, .3);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid dimgray;
+ border: 1px solid dimgrey;
+}
+
+.container .glass .content {
+  box-shadow: 0px 0px 5px grey;
+  width: 97%;
+  height: 87%;
+  margin-top: 3%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 10px;
+  position: relative;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, .4);
+}
+
+.container .glass .content p {
+  word-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  padding: 8px;
+  font-size: 15pt;
+  position: absolute;
+  top: 10px;
+  height: fit-content;
+  color: greenyellow;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  opacity: .7;
+  transition: 1s;
+}
+
+.container .glass .buttonsContainer {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: flex-end;
+  
+}
+
+
+.buttonsContainer button {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: white;
+  border: none;
+  font-size: 10pt;
+  color: darkgrey;
+  background: none
+}
+
+i .fa {
+  color: darkslategrey
+}
+
+#speedRate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red;
+  height: 100%;
+  
+}
+#speedRate button {
+  width: 30px;
+  height: 30px;
+  font-weight: normal;
+  border: none;
+  font-size: 10pt;
+ 
+}
