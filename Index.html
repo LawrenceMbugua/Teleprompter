@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Teleprompter</title>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  
+ 
+  
+  <img src="img.jpeg" alt="img.jpeg">
+  
+  <div class="container" id="container">
+    <div class="glass" id="glass">
+      <div class="content">
+        <p id="text" contenteditable="false">
+Ladies and gentlemen,
+
+A warm welcome to the Annual General Meeting of ApexInnovate Corp. I am privileged to stand before you today as the CEO of this exceptional unicorn company, a shining example of innovation and dedication in action.
+
+The past year has been nothing short of extraordinary for ApexInnovate Corp. Our revenue soared by an astounding 120%, a clear testament to the dedication and hard work of our entire team. It's not just about the numbers; it's about the tireless effort that goes into creating value for our customers.
+
+Innovation is the cornerstone of ApexInnovate Corp., and our latest achievement speaks volumes. The launch of our groundbreaking product, QuantumSolve, has revolutionized the industry, setting a new standard for performance and reliability. This achievement underscores our commitment to pushing boundaries and shaping the future.
+
+Yet, our success story is incomplete without mentioning the people who make it possible. The ApexInnovate family comprises talented individuals from around the world, united by a shared vision. Our inclusive culture fosters creativity and collaboration, ensuring that every voice is heard and every idea counts.
+
+Sustainability remains a top priority for ApexInnovate Corp. We've achieved a 50% reduction in our carbon footprint through eco-friendly practices, while also contributing significantly to causes we believe in. This commitment reflects not only our responsibility toward the environment but also the values we hold dear.
+
+As we stand at this juncture, let's acknowledge the challenges ahead. The road may be demanding, but our resilience is unwavering. ApexInnovate Corp. will continue to invest in R&D, nurture emerging talents, and expand our global presence. Together, we'll navigate uncharted waters and turn challenges into opportunities.
+
+In conclusion, my heartfelt gratitude goes out to every member of the ApexInnovate family – employees, partners, shareholders, and customers – for your unshakable support. Your trust fuels our drive for excellence, and I'm confident that together, we'll script an even more remarkable chapter in the remarkable journey of ApexInnovate Corp.
+
+Thank you.
+
+
+
+
+
+        </p>
+      </div>
+      
+      
+      
+      
+      <div class="buttonsContainer">
+        
+       <button onclick="stopSpeech()" id="stopSpeech">
+         <i class="fa fa-stop"></i>
+       </button>
+       
+        <button onclick="playState()" id="playState">
+          <i class="fa fa-play"></i>
+        </button>
+        
+        
+        <button onclick="decreaseSpeed()" id="increaseSpeed">
+          <i class="fa fa-arrow-down"></i>
+        </button>
+        
+        <button onclick="increaseSpeed()" id="decreaseSpeed">
+          <i class="fa fa-arrow-up"></i>
+        </button>
+      
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+   <button onclick="showMenu()" class="menu">
+       <i class="fa fa-bars"></i> 
+    
+  </button>
+  
+  
+  <div class="input" id="input">
+    <button onclick="closeMenu()" class="close">
+ 
+      Close <i class="fa fa-close"></i>
+     </button>
+    <textarea placeholder="Write your speech here..." name="" id="" cols="30" rows="10"></textarea>
+    <button id="submit" onclick="handleSubmit()" type="submit">
+      Submit <i class="fa fa-arrow-down"></i>
+     </button>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+    </html>
